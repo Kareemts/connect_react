@@ -166,7 +166,19 @@ const Comment = ({ openComment, setOpenComment, post, setFeed }) => {
 
                       {replay?.map((rply) => {
                         return (
-                          <Box fontSize={10} marginLeft={"5px"}>
+                          <Box
+                            fontSize={10}
+                            marginLeft={"5px"}
+                            sx={{
+                              border: "1px solid #000",
+                              borderColor: "black",
+                              width: 50,
+                              padding: "3px",
+                              backgroundColor: "#E0E0E0",
+                              borderRadius: "5px",
+                              marginTop: "3px",
+                            }}
+                          >
                             {rply}
                           </Box>
                         );
